@@ -7,22 +7,13 @@
   <link rel="stylesheet" href="C:\xampp\htdocs\vpesa\style.css">
 </head>
 <body>
+<?php include_once ("templates/nav.php"); ?>
   <header>
     <h1><img src="C:\xampp\htdocs\vpesa\images\download (1).png" alt="JBL Logo"> </h1>
     <p>Live Loud</p>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About JBL</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="technology.html">JBL Technology</a></li>
-      <li><a href="news.html">News & Events</a></li>
-      <li><a href="support.html">Support</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+
 
   <section class="hero">
     <img src="C:\xampp\htdocs\vpesa\images\enjoyment of music.jpeg" alt=>
