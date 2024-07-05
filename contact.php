@@ -40,3 +40,20 @@
   </footer>
 </body>
 </html>
+
+<?php
+// ... existing code for form handling and validation
+
+if ($sent) {
+  // Connect to database (replace with your credentials)
+  $servername = "localhost";
+  $username = "your_username";
+  $password = "your_password";
+  $dbname = "jbl_db";
+
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+}
+
