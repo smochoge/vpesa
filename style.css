@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding: 0;
     color: #333333; /* Default text color */
+    
+    
+     
+    
   }
   
   h1, h2, h3 {
@@ -116,6 +120,7 @@ body {
   /* Products page styles */
   .products {
     padding: 2rem;
+    
   }
   
   .product-category {
