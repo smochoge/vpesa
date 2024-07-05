@@ -8,6 +8,8 @@
 </head>
 <body>
 <?php include_once ("templates/nav.php"); ?>
+
+
   <header>
     <h1><img src="C:\xampp\htdocs\vpesa\images\download (1).png" alt="JBL Logo"> </h1>
     <p>Live Loud</p>
@@ -31,7 +33,7 @@
       <button type="submit">Send Message</button>
     </form>
 
-    <p>Phone: +1 (800) 522-5255</p>
+    <p>Phone: +254 746 786 168</p>
     <p>Email: <a href="mailto:support@jbl.com">support@jbl.com</a></p>
   </section>
 
@@ -44,16 +46,4 @@
 <?php
 // ... existing code for form handling and validation
 
-if ($sent) {
-  // Connect to database (replace with your credentials)
-  $servername = "localhost";
-  $username = "your_username";
-  $password = "your_password";
-  $dbname = "jbl_db";
-
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-}
 
