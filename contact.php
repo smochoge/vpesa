@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="C:\xampp\htdocs\vpesa\style.css">
 </head>
 <body>
-<?php include_once ("templates/nav.php"); ?>
+
 
 
   <header>
@@ -15,7 +15,17 @@
     <p>Live Loud</p>
   </header>
 
-
+  <nav>
+      <ul>
+      <a href="index.php">Home</a>
+      <a href="about.php">About JBL</a>
+      <a href="products.php">Products</a>
+      <a href="technology.php">JBL Technology</a>
+      <a href="news.php">News & Events</a>
+      <a href="support.php">Support</a><
+      <a href="contact.php">Contact Us</a>
+</ul>
+</nav>
   <section class="contact">
     <h2>Get in Touch</h2>
     <p>Have a question or need assistance? We're here to help! Fill out the form below or reach out to us via phone or email.</p>
