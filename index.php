@@ -1,4 +1,45 @@
+<?php
 
+include "config.php";
+
+// Check if form is submitted using POST method and action is set to "create"
+if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] == "create") {
+
+  try {
+    // Get form data
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+
+    // Prepare SQL statement
+    $sql = "INSERT INTO contacts (name, email, message)
+    VALUES (:name, :email, :message)";
+    $stmt = $conn->prepare($sql);
+
+    // Bind parameters
+    $stmt->bindParam(":name", $name);
+    $stmt->bindParam(":email", $email);
+    $stmt->bindParam(":message", $message);
+
+    // Execute the statement
+    $stmt->execute();
+
+    // Success message (optional)
+    echo "Thank you for contacting us! Your message has been submitted.";
+
+    // Redirect back to contact form (optional)
+    header("Location: contact.html");
+    exit();
+
+  } catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
+  }
+
+}
+
+// ... rest of your index.php code (read functionality, etc.) ...
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
