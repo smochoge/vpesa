@@ -7,6 +7,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<?php
+
+include_once ("config.php");  // Include your database connection details
+if(isset($_POST["Send Message"])){
+  $name = $_POST["Name"];
+  $email =  $_POST["Email"];
+  $message = $_POST["Message"];
+
+  $SQL = "INSERT INTO contacts (name,email,message)
+  VALUES ('$name', '$email','$message)";
+
+ if ($conn->query($SQL) === TRUE) {
+ echo "New record created successfully";
+ } else {
+   echo "Error: " . $SQL . "<br>" . $conn->error;
+  }
+   }
+
+$conn->close();
+   ?>
+
+
+?>
 
 
 
@@ -56,6 +79,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
