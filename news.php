@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JBL - News & Events</title>
-  <link rel="stylesheet" href="C:\xampp\htdocs\vpesa\style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1><img src="C:\xampp\htdocs\vpesa\images\download (1).png" alt="JBL Logo"> </h1>
+    <h1><img src="images\download (1).png" alt="JBL Logo"> </h1>
     <p>Live Loud</p>
   </header>
   <nav>
@@ -31,12 +31,12 @@
     <article>
       <h3>New Wireless Headphones Launched!</h3>
       <p>Experience superior sound quality and comfort with our all-new line of wireless headphones.  </p>
-      <img src="C:\xampp\htdocs\vpesa\images\Jbl enjoyment news and events.jpeg" alt="New JBL wireless headphones">
+      <img src="images\Jbl enjoyment news and events.jpeg" alt="New JBL wireless headphones">
     </article>
 
     <article>
       <h3>JBL at the Music Festival</h3>      <p>Don't miss us at the upcoming music festival! We'll be showcasing our latest products and hosting live demos.</p>
-      <img src="C:\xampp\htdocs\vpesa\images\concert news and events.jpeg" alt="JBL at music festival">
+      <img src="images\concert news and events.jpeg" alt="JBL at music festival">
     </article>
   </section>
 

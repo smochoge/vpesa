@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JBL - Products</title>
-  <link rel="stylesheet" href="C:\xampp\htdocs\vpesa\style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 </nav>
   <header>
-    <h1><img src="C:\xampp\htdocs\vpesa\images\download (1).png" alt="JBL Logo"></h1>
+    <h1><img src="images/download (1).png" alt="JBL Logo"></h1>
     <p>Live Loud</p>
   </header>
   <nav>
