@@ -1,3 +1,19 @@
+<?php
+
+include "config.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] == "create") {
+  // ... your Create logic here ...
+
+  // Example: After processing, redirect back to contact form (optional)
+  header("Location: contact.html");
+  exit();
+}
+
+// ... rest of your index.php code (read functionality, etc.) ...
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
