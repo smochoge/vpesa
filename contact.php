@@ -30,7 +30,7 @@
     <h2>Get in Touch</h2>
     <p>Have a question or need assistance? We're here to help! Fill out the form below or reach out to us via phone or email.</p>
 
-    <form method="post" action="index.php">
+    <form action="#">
       <label for="name">Name:</label>
       <input type="text" id="name" required>
 
