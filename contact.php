@@ -30,7 +30,7 @@
     <h2>Get in Touch</h2>
     <p>Have a question or need assistance? We're here to help! Fill out the form below or reach out to us via phone or email.</p>
 
-    <form action="#">
+    <form method="post" action="index.php">
       <label for="name">Name:</label>
       <input type="text" id="name" required>
 
@@ -39,14 +39,12 @@
 
       <label for="message">Message:</label>
       <textarea id="message" required></textarea>
-
+      <input type="hidden" name="action" value="create">
       <button type="submit">Send Message</button>
    
     </form>
-    <form method="post" action="index.php">
-  <input type="hidden" name="action" value="create">
-  <button type="submit">Submit</button>
-</form>
+    
+  
 
 
     <p>Phone: +254 746 786 168</p>
