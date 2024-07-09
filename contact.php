@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -47,6 +49,7 @@ $conn->close();
       <a href="news.php">News & Events</a>
       <a href="support.php">Support</a><
       <a href="contact.php">Contact Us</a>
+      <a href="view_messages.php">View messages</a>
 </ul>
 </nav>
   <section class="contact">
