@@ -12,12 +12,12 @@
 <?php
 
 include_once ("config.php");  // Include your database connection details
-if(isset($_POST["Send Message"])){
+if(isset($_POST["contact"])){
   $sender_name = $_POST["Name"];
   $sender_email =  $_POST["Email"];
   $subject_line = $_POST["Message"];
 
-  $SQL = "INSERT INTO messages (sender_name,sender_email,subject_line)
+  $SQL = "INSERT INTO contacts (name,email,message)
   VALUES ('$name', '$email','$message)";
 
  if ($conn->query($SQL) === TRUE) {
