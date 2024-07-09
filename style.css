@@ -48,40 +48,34 @@ body {
   }
   
   /* Navigation styles */
-  nav {
-    background-color: #F2F2F2;
-    padding: 1rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  
-  /* Hero section styles */
-  .hero {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .hero img {
-    width: 70%;
-    margin-bottom: 1rem;
-  }
-  
-  .hero a {
-    background-color: #007BFF; /* Primary button color (blue) */
-    color: #FFFFFF;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-  }
+  /* Navigation bar styles */
+nav {
+  background-color: #000;  /* Black background for the navbar */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;  /* Center the links horizontally */
+}
+
+nav li {
+  display: inline-block;  /* Display links inline */
+  margin-right: 20px;  /* Add some space between links */
+}
+
+nav a {
+  color: #fff;  /* White text for links */
+  text-decoration: none;  /* Remove underline */
+  padding: 10px 20px;  /* Add some padding to links */
+}
+
+nav a:hover {  /* Style for links on hover */
+  background-color: #FF9900;  /* Orange background on hover */
+  color: #000;  /* Black text on hover */
+}
+
   
   /* Featured products styles */
   .featured-products {
@@ -195,3 +189,4 @@ body {
     text-align: center;
     margin: 1rem 0;
   }
+

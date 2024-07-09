@@ -27,11 +27,11 @@ if(isset($_POST["Send Message"])){
   }
    }
 
-$conn->close();
+
    ?>
 
 
-?>
+
 
 
 
@@ -56,7 +56,7 @@ $conn->close();
     <h2>Get in Touch</h2>
     <p>Have a question or need assistance? We're here to help! Fill out the form below or reach out to us via phone or email.</p>
 
-    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" autocomplete="off" class="contacts">
+    <form action="contact.php" method="POST" >
       <label for="name">Name:</label>
       <input type="text" id="name" required>
 

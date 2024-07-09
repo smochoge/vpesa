@@ -32,7 +32,7 @@
   <section class="hero">
     <img src="images/enjoyment of music.jpeg" alt=>
     <h2>Experience sound that moves you.</h2>
-    <a href="products.html">Explore Products</a>
+    <a href="products.php">Explore Products</a>
   </section>
 
   <section class="featured-products">
