@@ -13,11 +13,11 @@
 
 include_once ("config.php");  // Include your database connection details
 if(isset($_POST["Send Message"])){
-  $name = $_POST["Name"];
-  $email =  $_POST["Email"];
-  $message = $_POST["Message"];
+  $sender_name = $_POST["Name"];
+  $sender_email =  $_POST["Email"];
+  $subject_line = $_POST["Message"];
 
-  $SQL = "INSERT INTO contacts (name,email,message)
+  $SQL = "INSERT INTO messages (sender_name,sender_email,subject_line)
   VALUES ('$name', '$email','$message)";
 
  if ($conn->query($SQL) === TRUE) {
@@ -49,14 +49,14 @@ $conn->close();
       <a href="news.php">News & Events</a>
       <a href="support.php">Support</a><
       <a href="contact.php">Contact Us</a>
-      <a href="view_messages.php">View messages</a>
+      <a href="view_messages.php">View contacts</a>
 </ul>
 </nav>
   <section class="contact">
     <h2>Get in Touch</h2>
     <p>Have a question or need assistance? We're here to help! Fill out the form below or reach out to us via phone or email.</p>
 
-    <form action="#">
+    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" autocomplete="off" class="contacts">
       <label for="name">Name:</label>
       <input type="text" id="name" required>
 

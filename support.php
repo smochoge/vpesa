@@ -21,7 +21,7 @@
       <a href="news.php">News & Events</a>
       <a href="support.php">Support</a><
       <a href="contact.php">Contact Us</a>
-      <a href="view_messages.php">View messages</a>
+      <a href="view_messages.php">View contacts</a>
 </ul>
 </nav>
 

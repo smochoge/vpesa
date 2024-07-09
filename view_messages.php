@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JBL - View Messages</title>
+  <title>JBL - View Contacts</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
       <a href="news.php">News & Events</a>
       <a href="support.php">Support</a><
       <a href="contact.php">Contact Us</a>
-      <a href="view_messages.php">View messages</a>
+      <a href="view_messages.php">View contacts</a>
 </ul>
 </nav>
 <?php
@@ -42,11 +42,11 @@ if(isset($_GET["DelId"])){
 }
  ?>
         <div class="banner">
-            <h1>View Messages</h1>
+            <h1>View Contacts</h1>
         </div>
         <div class="row">
             <div class="content">
-    <h1>People</h1>
+    <h1>Contacts</h1>
 
 <table>
     <thead>
@@ -81,16 +81,5 @@ if ($sel_mes_res->num_rows > 0) {
     echo "0 results";
 }
 ?>
-</tbody>    
-    <thead>
-        <tr>
-            <th>Fullname</th>
-            <th>Email</th>
-            <th>Subject Line</th>
-            <th>Time</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-</table>
 
   
